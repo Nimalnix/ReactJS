@@ -1,0 +1,52 @@
+Java script
+
+
+.It is a object based languages which has lot of build in objects
+  Build in objects in js--->
+                            .Window
+                            .Document(body of the html file)
+                            .History(Brwoser history)
+                            .Exception(exception handling)
+                            .screen
+                            .Navigator(Maps related appliction)
+                            .Geo location(current geographical location inludes latitude,longitude,currency,dateformat)
+                            .Localstorrage
+                            .sessionstorage
+                            .cookies
+                            .frames(dynamically create iframes)
+                            .forms(for forms mangements)
+
+
+.Object class is present in java script
+
+  .objects variables and composite variables
+
+
+
+Form:
+
+    .Form level validation(validation takes place once we validate the form by clicking summit button)
+    .Field level validation(validation takes place once we start typing )
+
+
+.by default form level validation is done to remove it we use novalidate key word
+
+Event Map Table
+
+.Event source                            .Event name                           Action
+-------------------------------------------------------------------------------------------------------------------------
+<input type="text"                         onblur                          checkfirstName()
+name="firstName: />                                                          {***********}
+
+<input type="Number"                         onblur                          checkAge()
+name="age: />                                                          {***********}
+
+
+
+.Required,minlength,maxlength,max,min avilable only in form level validation
+
+
+           
+
+
+

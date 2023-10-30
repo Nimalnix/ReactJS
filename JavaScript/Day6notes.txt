@@ -1,0 +1,90 @@
+Function is a body of statements that can take parameters and return value
+
+3 ways of definig functions in javascript
+----------------------------------------------------------
+.using Function keyword
+syntax:
+       function <functionName>(param1,param2,....paramN)
+{
+
+  .......statements....
+
+}
+
+->we should not return Return types
+
+
+.using key-value or name-body association
+syntax:
+       var <variableName> =>(param1,param2,.......,paramN)
+{
+ 
+   .......statements........
+}
+
+.using the build-in function class
+syntax:
+        var <variableName>=new Function("function expression");
+
+
+A function can be passed as a parameter to another function.It is called as a call-back function.There are 2 types
+
+   ->manual call-back function
+   ->automated call-back function (The fucntion automatically called by the browser)
+
+Javascript provides 3 extended UI functions 
+     ->window.alert() --For displaying information message or Warning
+
+
+
+DOM-Document object Model
+       .HTML tags are treated as objects
+       .DOM mechanism allows a brwoser understand the structure of a typical HTML document
+       .Browser has to understand the structure before the doucment is shown on the screen
+
+
+
+.A DOM tree is collection of nodes.Every node is an object that represents an HTML tag
+.Every node may have child nodes to streych the tree futher
+.Every DOM tree has a root node,which is HTML node
+
+
+DOM Tree->.Helps the browser to understand the structure
+         .DOM Tree is created by the browser when a html file is displyed
+         .Any HTMl tag can either have a name or an ID or somethimes both of them
+
+How to navigation or traversal happens in the tree?
+      ->In-Order (When the depth of the tree is more)
+      ->Post-Order (
+      ->pre-order (when the depth of the tree is lesser)
+
+
+How the nodes are selected?
+
+     .By ID
+     .BY name 
+
+
+.DOM operations that can be performed
+
+       document.createElement()
+       appendchild()
+       removechild()
+       findElement()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

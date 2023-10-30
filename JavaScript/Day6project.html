@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Add, Remove, and Replace Form Elements</title>
+
+    <style>
+
+        label {
+
+            display: block;
+
+            margin-bottom: 10px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Add, Remove, and Replace Form Elements</h1>
+
+ 
+
+    <form id="myForm">
+
+        <!-- Existing form fields go here -->
+
+    </form>
+
+ 
+
+    <button onclick="addField()">Add</button>
+
+    <button onclick="removeLastField()">Remove</button>
+
+    <button onclick="replaceLastField()">Replace</button>
+
+ 
+
+    <script>
+
+        function addField() {
+
+            const fieldType = prompt("Enter the field type (text, checkbox, email, date):");
+
+ 
+
+            if (fieldType) {
+
+                const form = document.getElementById("myForm");
+
+                const label = document.createElement("label");
+
+                const input = document.createElement("input");
+
+ 
+
+                switch (fieldType.toLowerCase()) {
+
+                    case "text":
+
+                    case "email":
+
+                    case "date":
+
+                        input.type = fieldType.toLowerCase();
+
+                        break;
+
+                    case "checkbox":
+
+                        input.type = "checkbox";
+
+                        const checkboxLabel = prompt("Enter checkbox label:");
+
+                        label.textContent = checkboxLabel;
+
+                        break;
+
+                    default:
+
+                        alert("Invalid field type. Please enter text, checkbox, email, or date.");
+
+                        return;
+
+                }
+
+ 
+
+                const labelText = prompt("Enter field label:");
+
+                label.textContent = labelText || fieldType;
+
+                label.appendChild(input);
+
+                form.appendChild(label);
+
+            }
+
+        }
+
+ 
+
+        function removeLastField() {
+
+            const form = document.getElementById("myForm");
+
+            const labels = form.querySelectorAll("label");
+
+ 
+
+            if (labels.length > 0) {
+
+                const lastLabel = labels[labels.length - 1];
+
+                form.removeChild(lastLabel);
+
+            } else {
+
+                alert("No fields to remove.");
+
+            }
+
+        }
+
+ 
+
+        function replaceLastField() {
+
+            const form = document.getElementById("myForm");
+
+            const labels = form.querySelectorAll("label");
+
+ 
+
+            if (labels.length > 0) {
+
+                const lastLabel = labels[labels.length - 1];
+
+                const saveButton = document.createElement("input");
+
+                saveButton.type = "submit";
+
+                saveButton.value = "Save";
+
+                form.replaceChild(saveButton, lastLabel);
+
+            } else {
+
+                alert("No fields to replace.");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+ 
+
+<body>
+
+    <script>
+
+         var dict=[];
+
+        dict["lenovo"]="12345";
+
+        dict["hp"]="3456";
+
+        dict["macbook"]="7890";
+
+        dict["acer"]="98765";
+
+ 
+
+        function getname(){
+
+            var modelname=document.forms[0].model.value;
+
+           
+
+            var check=document.getElementById("has")
+
+            check.style.fontWeight="bold"
+
+           
+
+            check.innerHTML=document.writeln("Ip iddress="+dict[modelname]);
+
+           
+
+        }
+
+ 
+
+    </script>
+
+    <form action="#" novalidate>
+
+    <label>
+
+        enter the model
+
+    </label>
+
+    <input type="text" name="model" onblur="getname()">
+
+    <label id="has" style="color:blue" ></label>
+
+   
+
+</form>
+
+   
+
+</body>
+
+</html>

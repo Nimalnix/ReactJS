@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <script type="text/javascript" lang="javascript">
+
+        cities=["Chennai","Bangalore","hyderabad","Mumbai","Pune","Ranchi"];
+
+ 
+
+        document.writeln(cities.length);
+
+        document.writeln(cities);
+
+ 
+
+        for(i in cities)
+
+        document.writeln(cities[i]+"<br>");
+
+ 
+
+        document.writeln("<br>I Of <br>");
+
+        for(i of cities)
+
+        document.writeln(i+"<BR>");
+
+            cities[0]="Chandigarh";
+            cities[11]="New delhi";
+            cities[13]=300;
+            
+            document.writeln("cities :" +cities);
+            cities.sort();//In Ascending order by default
+            document.writeln("cities :" +cities);
+
+              cities.reverse();
+              
+              document.writeln("cities :" +cities);
+        
+             
+
+    </script>
+
+</body>
+
+</html>
