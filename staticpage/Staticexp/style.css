@@ -1,0 +1,27 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin:0
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    padding: 30px 25px;
+}
+
+nav > h3 , nav > h4{
+    margin: 0 ;
+}
+
+nav > h3{
+    margin-right : auto;
+    color: aqua;
+    font-weight: 700;
+}
